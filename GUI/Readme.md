@@ -4,14 +4,19 @@ This Python script implements a graphical user interface (GUI) for Spoken Langua
 
 ## Prerequisites
 
+#### Platform
+- Operating System: Ubuntu 22.04
+- Python: python >= 3.8 (make sure the default python is python3)
+
 #### Make sure you have the following libraries installed:
 
-- pandas==1.3.4
-- sounddevice==0.4.5
-- soundfile==0.10.3
-- pygame==2.1.2
-- torch==1.11.0
-- matplotlib==3.4.3
+- pandas
+- sounddevice
+- soundfile
+- pygame
+- torch
+- matplotlib
+- numexpr
 
 #### The list of imported libraries
 
@@ -26,7 +31,7 @@ This Python script implements a graphical user interface (GUI) for Spoken Langua
 #### You can install these libraries using the following command:
 
 ```bash
-pip install pandas==1.3.4 sounddevice==0.4.5 soundfile==0.10.3 pygame==2.1.2 torch==1.11.0 matplotlib==3.4.3
+pip install pandas sounddevice soundfile pygame torch matplotlib numexpr
 ```
 Or,
 
