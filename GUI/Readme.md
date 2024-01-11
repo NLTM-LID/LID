@@ -111,7 +111,7 @@ We have two models (u-vector and u-vector with WSSL) to perform this task. We ne
   <img src="img/Main7.png" width="90%"/>
 </p>
 
-After clicking anyone of the option, we need to select an audio file. We can select the recorded audio from "recorded_audio" directory. We can also choose other saved audio file using the open file manager.
+After clicking any one of the options, we need to select an audio file. We can select the recorded audio from the "recorded_audio" directory. We can also choose other saved audio file using the open file manager.
  <p float="left">
   <img src="img/Open_file1.png" width="90%"/>
 </p>
@@ -120,7 +120,7 @@ After clicking anyone of the option, we need to select an audio file. We can sel
 ## Results and Confirmation
 
 - After language identification, the predicted language is displayed, and a confirmation message box appears. The user can confirm or deny the predicted language.
-- If confirmed, the audio file is moved to the corresponding language directory under `classified_audio` directory with a timestamped filename.
+- If confirmed, the audio file is moved to the corresponding language directory under the `classified_audio` directory with a timestamped filename.
 - If denied, the audio file is also moved to the `unclassified_audio` directory with a different timestamped filename.
 
 ## Additional Information
@@ -131,8 +131,8 @@ After clicking anyone of the option, we need to select an audio file. We can sel
 
 ## References
 
-- H. Muralikrishna, P. Sapra, A. Jain and D. A. Dinesh, "Spoken Language Identification Using Bidirectional LSTM Based LID Sequential Senones," 2019 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU), Singapore, 2019, pp. 320-326, doi: 10.1109/ASRU46091.2019.9003947.(https://ieeexplore.ieee.org/document/9003947)
-- M. H, S. Kapoor, D. A. Dinesh and P. Rajan, "Spoken Language Identification in Unseen Target Domain Using Within-Sample Similarity Loss," ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Toronto, ON, Canada, 2021, pp. 7223-7227, doi: 10.1109/ICASSP39728.2021.9414090.(https://ieeexplore.ieee.org/document/9414090)
+- H. Muralikrishna, S. Pulkit, J. Anuksha, and A. D. Dileep, "Spoken Language Identification using Bidirectional LSTM based LID Sequential Senones." in IEEE Automatic Speech Recognition and Understanding Workshop (ASRU), Sentosa, Singapore, 2019, pp. 320-326. (https://ieeexplore.ieee.org/document/9003947)
+- H. Muralikrishna, S. Kapoor, A. D. Dileep, and P. Rajan, "Spoken Language Identification in unseen Target Domain using Within-sample Similarity Loss." in IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Toronto, Canada, 2021, pp. 7223-7227. (https://ieeexplore.ieee.org/document/9414090)
 
 ## License
 
