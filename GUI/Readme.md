@@ -80,54 +80,54 @@ The GUI window will appear, providing options for recording audio, playing saved
  First click on the "Start Recording" button and then press the "OK" button to start the recording of speech audio using the microphone.
 
 <p float="left">
-  <img src="img/Main1.png" width="80%"/>
-  <img src="img/Recording_start.png" width="80%"/>
+  <img src="img/Main1.png" width="75%"/>
+  <img src="img/Recording_start.png" width="75%"/>
 </p>
 
 ##### (ii) Stop Recording
 To stop the ongoing audio recording, click on the "Stop Recording" button. The recording will be stopped immediately. Then click on the "OK" button. After this, the next window will show the message regarding the location of saved recorded audio. You need to choose this audio when you will perform the language identification.
 <p float="left">
-  <img src="img/Main2.png" width="80%"/>
-  <img src="img/Recording_stop.png" width="80%"/>
-  <img src="img/Recording_stop1.png" width="80%"/>
+  <img src="img/Main2.png" width="75%"/>
+  <img src="img/Recording_stop.png" width="75%"/>
+  <img src="img/Recording_stop1.png" width="75%"/>
 </p>
 
 ##### (iii) Play Recording
 If you want to liesten the recorded audio, you can do it by pressing the "Play Recording" button.
 <p float="left">
-  <img src="img/Main3.png" width="80%"/>
+  <img src="img/Main3.png" width="75%"/>
 </p>
 
 ##### (iii) Stop Playing Recording
 If you want to stop playing the recorded audio in between, you can do it by pressing the "Stop Playing Recording" button.
 <p float="left">
-  <img src="img/Main4.png" width="80%"/>
+  <img src="img/Main4.png" width="75%"/>
 </p>
 
 #### 2. To check the saved speech audio
 You can check the saved audio by playing the saved audio. Click on the "Play Saved Audio" button and then choose the audio file using opened file manager. After selecting the audio file, the audio will be played. You can also stop playing the audio any time by clicking the "Stop Saved Audio" button.
 
 <p float="left">
-  <img src="img/Main5.png" width="80%"/>
-  <img src="img/Open_file.png" width="80%"/>
-  <img src="img/Main6.png" width="80%"/>
+  <img src="img/Main5.png" width="75%"/>
+  <img src="img/Open_file.png" width="75%"/>
+  <img src="img/Main6.png" width="75%"/>
 </p>
 
 #### 3. Language Identification: 
 
 We have u-vector with WSSL model to perform the language identification task. We need to click "Identify Language (Using WSSL uVector)" to perform the language identification.
 <p float="left">
-  <img src="img/Main7.png" width="80%"/>
+  <img src="img/Main7.png" width="75%"/>
 </p>
 
 After clicking it, we need to select an audio file. We can select the recorded audio from the "recorded_audio" directory. We can also choose another saved audio file using the open file manager.
 <p float="left">
-  <img src="img/Open_file1.png" width="80%"/>
+  <img src="img/Open_file1.png" width="75%"/>
 </p>
 
 After selecting the audio file, the predicted language will show on the message window. This window will also ask the user for the feedback that predicted language is correct or not. Based on the user feedback, this audio file will be copied to "classified_audio" or "unclassified_audio" directory if prediction is correct or wrong, respectively.
 <p float="left">
-  <img src="img/Classify.png" width="80%"/>
+  <img src="img/Classify.png" width="75%"/>
 </p>
 
 Later, a bar graph will display the predicted probabilities of all languages.
