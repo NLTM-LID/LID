@@ -1,5 +1,5 @@
 
-# Spoken Language Identification using u-vector
+# Spoken Language Identification using u-vector with CLI
 
 This Python script performs spoken language identification using u-vector and u-vector with WSSL models. It takes either a single audio file or a directory containing multiple audio files as input. The script uses pre-trained u-vector models to identify the language of the spoken audio.
 
