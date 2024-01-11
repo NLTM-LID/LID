@@ -5,4 +5,5 @@ pygame
 torch
 matplotlib
 numexpr
+numpy
 scipy

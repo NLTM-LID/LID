@@ -23,11 +23,14 @@ def threading_rec(x):
         if file_exists:
             # Read the recording if it exists and play it
             data, fs = sf.read("./recorded_audio/record.wav", dtype='float32')
-            sd.play(data, fs)
-            sd.wait()
+            sd.play(data, fs, blocking=False)
+            # sd.wait()
         else:
             # Display an error if none is found
             messagebox.showerror(message="Record something to play")
+    elif x == 4:
+        # To Stop playing a recording, it must exist.
+        sd.stop()
 
 # Callback function to fit data into the queue
 def callback(indata, frames, time, status):

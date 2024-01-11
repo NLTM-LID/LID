@@ -1,13 +1,21 @@
 # Spoken Language Identification using u-vector
 
-This repository contains the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both u-vector and u-vector with WSSL models. 
+This work is the 1st version of the spoken language identification (LID) task. It uses the pre-trained model based on the u-vector method (u-vector with WSSL models).
 
-The CLI also identifies the language of spoken audio using both u-vector and u-vector with WSSL models, but it takes either a single audio file or a directory containing multiple audio files as input. 
+This repository contains the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector with WSSL model. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using u-vector with WSSL models. 
 
-Both tasks use the pre-trained models to identify the language of the spoken audio. The minimum duration of the spoken audio should be around 5-10 seconds.
+The CLI also identifies the language of spoken audio using u-vector with WSSL models, but it takes either a single audio file or a directory containing multiple audio files as input. 
+
+Both tasks, GUI and CLI uses the pre-trained models to identify the language of the spoken audio. The minimum duration of the spoken audio should be around 5-10 seconds.
 
 ## Note: Please follow the corresponding Readme.md file for more details.
 
+# Limitation
+These models are trained on speech datasets taken from the EkStep repository collected from TV/Radio news, YouTube videos, recordings, etc. These datasets do not cover all possible types of speech such as dialects, accents, channels, and domains. Therefore, these models may fail in the following conditions.
+
+- Presence of unfamiliar dialects and accents.
+- Presence of high domain mismatch.
+- Contains too much noise and unclear speech.
 
 # Acknowledgement
 

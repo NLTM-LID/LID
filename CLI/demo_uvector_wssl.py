@@ -1,7 +1,6 @@
 ################## used Library  ############################################################
 import torch
 import torch.nn as nn
-from extract import extract_BNF
 import os 
 import numpy as np
 import pandas as pd
@@ -9,7 +8,9 @@ from torch.autograd import Variable
 import sys
 import argparse
 import matplotlib.pyplot as plt
-# import sklearn.metrics
+## Libraries from external python code
+from extract import extract_BNF
+
 
 ############ number of class and all #####################
 Nc = 12 # Number of language classes 
@@ -115,7 +116,6 @@ class MSA_DAT_Net(nn.Module):
                 
 ######################## uVector ####################
 ##########################################################
-
 def uvector_wssl(fn):
     model1 = LSTMNet()
     model2 = LSTMNet()
