@@ -18,6 +18,8 @@ This Python script performs spoken language identification using u-vector and u-
 - torch
 - matplotlib
 - numexpr
+- scipy
+- numpy
 
 #### The list of imported libraries
 
@@ -28,6 +30,8 @@ This Python script performs spoken language identification using u-vector and u-
 - shutil
 - random
 - os
+- scipy
+- numpy
 
 #### You can install these libraries using the following command:
 
