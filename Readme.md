@@ -1,12 +1,12 @@
 # Spoken Language Identification using u-vector
 
-This work is the 1st version of the spoken language identification (LID) task. It uses the pre-trained model based on the u-vector method (u-vector with WSSL models).
+This work is the 1st version of the spoken language identification (LID) task. It uses the pre-trained model based on the u-vector with Within-Sample Similarity Loss (WSSL).
 
 This repository contains the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector with WSSL model. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using u-vector with WSSL models. 
 
 The CLI also identifies the language of spoken audio using u-vector with WSSL models, but it takes either a single audio file or a directory containing multiple audio files as input. 
 
-Both tasks, GUI and CLI uses the pre-trained models to identify the language of the spoken audio. The minimum duration of the spoken audio should be around 5-10 seconds.
+Both tasks, GUI and CLI use the pre-trained models to identify the language of the spoken audio. The minimum duration of the spoken audio should be around 5-10 seconds.
 
 ## Note: Please follow the corresponding Readme.md file for more details.
 
