@@ -1,8 +1,8 @@
 # Spoken Language Identification using u-vector
 
-This repository contails the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both standard u-vector and WSSL u-vector models. 
+This repository contains the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both u-vector and u-vector with WSSL models. 
 
-The CLI also identify the language of spoken audio using both standard u-vector and u-vector with WSSL models, but it takes either a single audio file or a directory containing multiple audio files as input. 
+The CLI also identifies the language of spoken audio using both u-vector and u-vector with WSSL models, but it takes either a single audio file or a directory containing multiple audio files as input. 
 
 Both tasks use the pre-trained models to identify the language of the spoken audio. The minimum duration of the spoken audio should be around 5-10 seconds.
 
