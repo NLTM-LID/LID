@@ -1,6 +1,6 @@
-# Spoken Language Identification GUI
+# Spoken Language Identification using u-vector with GUI
 
-This Python script implements a graphical user interface (GUI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both standard u-vector and WSSL u-vector models.
+This Python script implements a graphical user interface (GUI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both standard u-vector and u-vector with WSSL models.
 
 ## Prerequisites
 
