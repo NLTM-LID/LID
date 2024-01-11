@@ -9,6 +9,11 @@ Both tasks use the pre-trained models to identify the language of the spoken aud
 ## Note: Please follow the corresponding Readme.md file for more details.
 
 
+# Acknowledgement
+
+This work is performed with the support of the project named "Speech Technologies In Indian Languages". It is part of the NLTM (National Language Technology Mission) consortium project which is sponsored by Meity (Ministry of Electronics and Information Technology), India.
+
+
 # License
 
 This project is licensed under the NLTM License - see the [LICENSE](LICENSE) file for details.
