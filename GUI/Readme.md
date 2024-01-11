@@ -1,6 +1,6 @@
 # Spoken Language Identification GUI
 
-This Python script implements a graphical user interface (GUI) for Spoken Language Identification using uVector and uVector with WSSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both standard uVector and WSSL uVector models.
+This Python script implements a graphical user interface (GUI) for Spoken Language Identification using u-vector and u-vector with WSSL models. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using both standard u-vector and WSSL u-vector models.
 
 ## Prerequisites
 
@@ -55,8 +55,8 @@ cd LID/GUI
 - recorded_audio: It stores the current recorded audio.
 - extracted_BNF: Stores the extracted bottleneck features (BNF) of the audio file.
 - model: Contains the pretrained models.
-- demo_uvector.py: Code for the uVector
-- demo_uvector_wssl.py: Code for the uVector with WSSL
+- demo_uvector.py: Code for the u-vector
+- demo_uvector_wssl.py: Code for the u-vector with WSSL
 - extract.py: Calling the python script to extract the BNF features
 - sound.py: Contains the code for audio recording features.
 - gui.py: It's the main code for GUI.
@@ -67,7 +67,7 @@ cd LID/GUI
 python gui.py
 ```
 
-The GUI window will appear, providing options for recording audio, playing saved audio, and identifying the language using uVector and WSSL uVector models.
+The GUI window will appear, providing options for recording audio, playing saved audio, and identifying the language using u-vector and u-vector with WSSL models.
 
 ## Features
 
@@ -105,7 +105,7 @@ You can check the saved audio by playing the saved audio. Click on the "Play Sav
 </p>
 
 #### 3. Language Identification: 
-We have two models (uVector and uVector with WSSL) to perform this task. We need to click "Identify Language (Using uVector)" for uVector and "Identify Language (Using WSSL uVector)" for uVector with WSSL.
+We have two models (u-vector and u-vector with WSSL) to perform this task. We need to click "Identify Language (Using uVector)" for u-vector and "Identify Language (Using WSSL uVector)" for u-vector with WSSL.
 <p float="left">
   <img src="img/Main6.png" width="90%"/>
   <img src="img/Main7.png" width="90%"/>
@@ -126,7 +126,7 @@ After clicking anyone of the option, we need to select an audio file. We can sel
 ## Additional Information
 
 - The GUI uses pygame for audio playback and matplotlib for displaying language identification probabilities.
-- The uVector and WSSL uVector models are loaded from the `demo_uvector` and `demo_uvector_wssl` modules.
+- The u-vector and u-vector with WSSL models are loaded from the `demo_uvector` and `demo_uvector_wssl` modules.
 - The `sound` module handles audio recording functionalities.
 
 ## References
