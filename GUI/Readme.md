@@ -17,6 +17,8 @@ This Python script implements a graphical user interface (GUI) for Spoken Langua
 - torch
 - matplotlib
 - numexpr
+- scipy
+- numpy
 
 #### The list of imported libraries
 
@@ -27,6 +29,8 @@ This Python script implements a graphical user interface (GUI) for Spoken Langua
 - shutil
 - random
 - os
+- scipy
+- numpy
 
 #### You can install these libraries using the following command:
 
