@@ -98,7 +98,7 @@ If you want to liesten the recorded audio, you can do it by pressing the "Play R
   <img src="img/Main3.png" width="75%"/>
 </p>
 
-##### (iii) Stop Playing Recording
+##### (iv) Stop Playing Recording
 If you want to stop playing the recorded audio in between, you can do it by pressing the "Stop Playing Recording" button.
 <p float="left">
   <img src="img/Main4.png" width="75%"/>
