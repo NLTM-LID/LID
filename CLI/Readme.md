@@ -1,7 +1,7 @@
 
-# Spoken Language Identification using uVector
+# Spoken Language Identification using u-vector
 
-This Python script performs spoken language identification using uVector and uVector with WSSSL models. It takes either a single audio file or a directory containing multiple audio files as input. The script uses pre-trained uVector models to identify the language of the spoken audio.
+This Python script performs spoken language identification using u-vector and u-vector with WSSL models. It takes either a single audio file or a directory containing multiple audio files as input. The script uses pre-trained u-vector models to identify the language of the spoken audio.
 
 ## Prerequisites
 
@@ -51,16 +51,16 @@ cd LID/CLI
 
 ### 2. Run the scripts:
 
-#### For uVector
+#### For u-vector
 ```bash
 python demo_uvector.py path/to/audio_file_or_directory
 ```
-#### For uVector with WSSL
+#### For u-vector with WSSL
 ```bash
 python demo_uvector_wssl.py path/to/audio_file_or_directory
 ```
 
-Replace `path/to/audio_file_or_directory` with the path to the audio file or directory containing audio files with '.wav' extension.
+Replace `path/to/audio_file_or_directory` with the path to the audio file or directory containing audio files with the '.wav' extension.
 
 ## Output
 
@@ -68,7 +68,7 @@ Replace `path/to/audio_file_or_directory` with the path to the audio file or dir
 
 - If a directory is provided, the predicted languages for each audio file will be displayed in the console, and a CSV file named `predicted_lang.csv` will be created in the current directory, containing the audio filename and predicted language for each audio file.
 
-- Additionally, if only one audio file is provided, a bar chart showing the language identification probabilities with respect to all languages of the model will be displayed.
+- Additionally, if only one audio file is provided, a bar chart showing the language identification probabilities for all languages of the model will be displayed.
 
 ## Model Information
 
@@ -76,8 +76,8 @@ The script uses pre-trained models for Indian spoken language identification. Th
 
 The model files are located in the `model` directory:
 
-- `uVector_base_12_class_e18.pth`: uVector model for language identification.
-- `ZWSSL_20_50_e21.pth`: uVector with WSSL model for language identification.
+- `uVector_base_12_class_e18.pth`: u-vector model for language identification.
+- `ZWSSL_20_50_e21.pth`: u-vector with WSSL model for language identification.
 
 ## References
 
