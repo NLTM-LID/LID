@@ -88,7 +88,7 @@ def classification_wssl_uvector():
             shutil.move(selected_audio, './classified_audio/{}/{}'.format(Y1, new_filename))
         else:
             new_filename = datetime.now().strftime("%Y%m%d-%H%M%S")+str(random.randint(1,1000))+'.wav'
-            shutil.move(selected_audio, './classified_audio/{}/{}'.format(Y1, new_filename))
+            shutil.move(selected_audio, './unclassified_audio/{}'.format(new_filename))
 
         # Plot the language identification probabilities
         fig = plt.figure(figsize=(10, 5))
