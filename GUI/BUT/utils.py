@@ -164,7 +164,7 @@ def read_lab_to_bool_vec(lab_file, true_label=None, length=0, frame_rate=100.):
     labels = np.atleast_2d(np.loadtxt(lab_file, usecols=(0,1,2), dtype=object))
     if true_label: labels = labels[labels[:,2] == true_label]
     start, end = np.rint(frame_rate/1e7*labels.T[:2].astype(int)).astype(int)
-    if not end.size: return np.zeros(min_len, dtype=bool)
+    if not end.size: return np.zeros(min_len).astype(bool)
     frms = np.repeat(np.r_[np.tile([False,True], len(end)), False], np.r_[np.c_[start - np.r_[0, end[:-1]], end-start].flat, max(0, min_len-end[-1])])
     assert len(frms) >= min_len and np.sum(end-start) == np.sum(frms)
     return frms[:max_len]
@@ -209,10 +209,10 @@ def compute_vad(s, win_length=200, win_overlap=120, n_realignment=5, threshold=0
 
         llhs = np.exp(llhs - llh)
 
-        out  = np.zeros(llhs.shape[0], dtype=np.bool)
+        out  = np.zeros(llhs.shape[0]).astype(bool)
         out[llhs[:,0] < threshold] = True
     except RuntimeWarning:
         logging.info("File contains only silence")
-        out=np.zeros(E.shape[0],dtype=np.bool)
+        out=np.zeros(E.shape[0]).astype(bool)
 
     return out
