@@ -1,6 +1,6 @@
 # Spoken Language Identification using u-vector
 
-This work is the 1st version of the spoken language identification (LID) task. It uses the pre-trained model based on the u-vector with Within-Sample Similarity Loss (WSSL).
+This work is the 1st version of the spoken language identification (LID) task. It uses the pre-trained model based on the u-vector with Within-Sample Similarity Loss (WSSL). This model identifies the 11 Indian languages (Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu) and Indian English.
 
 This repository contains the Python script of a graphical user interface (GUI) and the command line interface (CLI) for Spoken Language Identification using u-vector with WSSL model. The GUI allows users to perform various tasks such as recording audio, playing saved audio files, and identifying the language of spoken audio using u-vector with WSSL models. 
 
