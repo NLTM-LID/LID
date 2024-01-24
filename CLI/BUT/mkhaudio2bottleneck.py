@@ -26,8 +26,13 @@ def read_signal(file_name):
         extension= file_name.split('.')[-1]
         if extension=='wav':
             fs,signal=wav.read(file_name)
+            if len(signal.shape) > 1 and signal.shape[1] == 2:
+                # If stereo, convert to mono by averaging the channels
+                signal = np.mean(signal, axis=1)
             if not fs==8000:
-                logging.info("Unsupported audio format, expected audio input should be 8kHz")
+                signal = resample(signal, int(len(signal)*(8000/fs)))
+                fs = 8000
+                # logging.info("Unsupported audio format, expected audio input should be 8kHz")
         elif extension=='raw':
             signal=np.fromfile(file_name,dtype='int16')
         else:
