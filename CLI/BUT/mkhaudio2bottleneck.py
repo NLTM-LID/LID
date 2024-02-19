@@ -17,6 +17,7 @@ import pandas as pd
 import sys, os, logging
 import numpy as np
 import scipy.io.wavfile as wav
+import scipy.signal as sps
 import utils
 import nn_def
 logging.basicConfig( format= '%(message)s',level=logging.INFO)
@@ -30,7 +31,7 @@ def read_signal(file_name):
                 # If stereo, convert to mono by averaging the channels
                 signal = np.mean(signal, axis=1)
             if not fs==8000:
-                signal = resample(signal, int(len(signal)*(8000/fs)))
+                signal = sps.resample(signal, int(len(signal)*(8000/fs)))
                 fs = 8000
                 # logging.info("Unsupported audio format, expected audio input should be 8kHz")
         elif extension=='raw':
