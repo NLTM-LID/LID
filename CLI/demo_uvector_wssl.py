@@ -1,7 +1,8 @@
 ################## used Library  ############################################################
 import torch
 import torch.nn as nn
-import os 
+import os
+from glob import glob
 import numpy as np
 import pandas as pd
 from torch.autograd import Variable
@@ -198,10 +199,11 @@ def main():
         file_list.append(path)
     # When path is a directory
     elif os.path.isdir(path):
-        for filename in os.listdir(path):
-            if filename.endswith(".wav"):
-                file_path = os.path.join(path, filename)
-                file_list.append(file_path)
+        file_list = [file for path1, subdir, files in os.walk(path) for file in glob(os.path.join(path1, "*.wav"), recursive=True)]
+        # for filename in os.listdir(path):
+        #     if filename.endswith(".wav"):
+        #         file_path = os.path.join(path, filename)
+        #         file_list.append(file_path)
     else:
         print("Error: {} is not a valid file/directory path.".format(path))
 
